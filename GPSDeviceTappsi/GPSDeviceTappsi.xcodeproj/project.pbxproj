@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E48582151B6EDAFB002F8E4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E48582141B6EDAFB002F8E4E /* main.m */; };
+		E48582181B6EDAFB002F8E4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E48582171B6EDAFB002F8E4E /* AppDelegate.m */; };
+		E485821B1B6EDAFB002F8E4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E485821A1B6EDAFB002F8E4E /* ViewController.m */; };
+		E485821E1B6EDAFB002F8E4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E485821C1B6EDAFB002F8E4E /* Main.storyboard */; };
+		E48582201B6EDAFB002F8E4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E485821F1B6EDAFB002F8E4E /* Images.xcassets */; };
+		E48582231B6EDAFB002F8E4E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E48582211B6EDAFB002F8E4E /* LaunchScreen.xib */; };
+		E485822F1B6EDAFB002F8E4E /* GPSDeviceTappsiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E485822E1B6EDAFB002F8E4E /* GPSDeviceTappsiTests.m */; };
+		E48582391B6EDBBC002F8E4E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48582381B6EDBBC002F8E4E /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E48582291B6EDAFB002F8E4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E48582071B6EDAFB002F8E4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E485820E1B6EDAFB002F8E4E;
+			remoteInfo = GPSDeviceTappsi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E485820F1B6EDAFB002F8E4E /* GPSDeviceTappsi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSDeviceTappsi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48582131B6EDAFB002F8E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48582141B6EDAFB002F8E4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E48582161B6EDAFB002F8E4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E48582171B6EDAFB002F8E4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E48582191B6EDAFB002F8E4E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E485821A1B6EDAFB002F8E4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E485821D1B6EDAFB002F8E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E485821F1B6EDAFB002F8E4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E48582221B6EDAFB002F8E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E48582281B6EDAFB002F8E4E /* GPSDeviceTappsiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSDeviceTappsiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E485822D1B6EDAFB002F8E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E485822E1B6EDAFB002F8E4E /* GPSDeviceTappsiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSDeviceTappsiTests.m; sourceTree = "<group>"; };
+		E48582381B6EDBBC002F8E4E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E485820C1B6EDAFB002F8E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48582391B6EDBBC002F8E4E /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48582251B6EDAFB002F8E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E48582061B6EDAFB002F8E4E = {
+			isa = PBXGroup;
+			children = (
+				E48582381B6EDBBC002F8E4E /* CoreLocation.framework */,
+				E48582111B6EDAFB002F8E4E /* GPSDeviceTappsi */,
+				E485822B1B6EDAFB002F8E4E /* GPSDeviceTappsiTests */,
+				E48582101B6EDAFB002F8E4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E48582101B6EDAFB002F8E4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E485820F1B6EDAFB002F8E4E /* GPSDeviceTappsi.app */,
+				E48582281B6EDAFB002F8E4E /* GPSDeviceTappsiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E48582111B6EDAFB002F8E4E /* GPSDeviceTappsi */ = {
+			isa = PBXGroup;
+			children = (
+				E48582161B6EDAFB002F8E4E /* AppDelegate.h */,
+				E48582171B6EDAFB002F8E4E /* AppDelegate.m */,
+				E48582191B6EDAFB002F8E4E /* ViewController.h */,
+				E485821A1B6EDAFB002F8E4E /* ViewController.m */,
+				E485821C1B6EDAFB002F8E4E /* Main.storyboard */,
+				E485821F1B6EDAFB002F8E4E /* Images.xcassets */,
+				E48582211B6EDAFB002F8E4E /* LaunchScreen.xib */,
+				E48582121B6EDAFB002F8E4E /* Supporting Files */,
+			);
+			path = GPSDeviceTappsi;
+			sourceTree = "<group>";
+		};
+		E48582121B6EDAFB002F8E4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E48582131B6EDAFB002F8E4E /* Info.plist */,
+				E48582141B6EDAFB002F8E4E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E485822B1B6EDAFB002F8E4E /* GPSDeviceTappsiTests */ = {
+			isa = PBXGroup;
+			children = (
+				E485822E1B6EDAFB002F8E4E /* GPSDeviceTappsiTests.m */,
+				E485822C1B6EDAFB002F8E4E /* Supporting Files */,
+			);
+			path = GPSDeviceTappsiTests;
+			sourceTree = "<group>";
+		};
+		E485822C1B6EDAFB002F8E4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E485822D1B6EDAFB002F8E4E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E485820E1B6EDAFB002F8E4E /* GPSDeviceTappsi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48582321B6EDAFB002F8E4E /* Build configuration list for PBXNativeTarget "GPSDeviceTappsi" */;
+			buildPhases = (
+				E485820B1B6EDAFB002F8E4E /* Sources */,
+				E485820C1B6EDAFB002F8E4E /* Frameworks */,
+				E485820D1B6EDAFB002F8E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSDeviceTappsi;
+			productName = GPSDeviceTappsi;
+			productReference = E485820F1B6EDAFB002F8E4E /* GPSDeviceTappsi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E48582271B6EDAFB002F8E4E /* GPSDeviceTappsiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48582351B6EDAFB002F8E4E /* Build configuration list for PBXNativeTarget "GPSDeviceTappsiTests" */;
+			buildPhases = (
+				E48582241B6EDAFB002F8E4E /* Sources */,
+				E48582251B6EDAFB002F8E4E /* Frameworks */,
+				E48582261B6EDAFB002F8E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E485822A1B6EDAFB002F8E4E /* PBXTargetDependency */,
+			);
+			name = GPSDeviceTappsiTests;
+			productName = GPSDeviceTappsiTests;
+			productReference = E48582281B6EDAFB002F8E4E /* GPSDeviceTappsiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E48582071B6EDAFB002F8E4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Jose Aponte";
+				TargetAttributes = {
+					E485820E1B6EDAFB002F8E4E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E48582271B6EDAFB002F8E4E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E485820E1B6EDAFB002F8E4E;
+					};
+				};
+			};
+			buildConfigurationList = E485820A1B6EDAFB002F8E4E /* Build configuration list for PBXProject "GPSDeviceTappsi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E48582061B6EDAFB002F8E4E;
+			productRefGroup = E48582101B6EDAFB002F8E4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E485820E1B6EDAFB002F8E4E /* GPSDeviceTappsi */,
+				E48582271B6EDAFB002F8E4E /* GPSDeviceTappsiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E485820D1B6EDAFB002F8E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E485821E1B6EDAFB002F8E4E /* Main.storyboard in Resources */,
+				E48582231B6EDAFB002F8E4E /* LaunchScreen.xib in Resources */,
+				E48582201B6EDAFB002F8E4E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48582261B6EDAFB002F8E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E485820B1B6EDAFB002F8E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E485821B1B6EDAFB002F8E4E /* ViewController.m in Sources */,
+				E48582181B6EDAFB002F8E4E /* AppDelegate.m in Sources */,
+				E48582151B6EDAFB002F8E4E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48582241B6EDAFB002F8E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E485822F1B6EDAFB002F8E4E /* GPSDeviceTappsiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E485822A1B6EDAFB002F8E4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E485820E1B6EDAFB002F8E4E /* GPSDeviceTappsi */;
+			targetProxy = E48582291B6EDAFB002F8E4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E485821C1B6EDAFB002F8E4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E485821D1B6EDAFB002F8E4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E48582211B6EDAFB002F8E4E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E48582221B6EDAFB002F8E4E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E48582301B6EDAFB002F8E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E48582311B6EDAFB002F8E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E48582331B6EDAFB002F8E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GPSDeviceTappsi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E48582341B6EDAFB002F8E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GPSDeviceTappsi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E48582361B6EDAFB002F8E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GPSDeviceTappsiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPSDeviceTappsi.app/GPSDeviceTappsi";
+			};
+			name = Debug;
+		};
+		E48582371B6EDAFB002F8E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GPSDeviceTappsiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPSDeviceTappsi.app/GPSDeviceTappsi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E485820A1B6EDAFB002F8E4E /* Build configuration list for PBXProject "GPSDeviceTappsi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48582301B6EDAFB002F8E4E /* Debug */,
+				E48582311B6EDAFB002F8E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48582321B6EDAFB002F8E4E /* Build configuration list for PBXNativeTarget "GPSDeviceTappsi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48582331B6EDAFB002F8E4E /* Debug */,
+				E48582341B6EDAFB002F8E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E48582351B6EDAFB002F8E4E /* Build configuration list for PBXNativeTarget "GPSDeviceTappsiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48582361B6EDAFB002F8E4E /* Debug */,
+				E48582371B6EDAFB002F8E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E48582071B6EDAFB002F8E4E /* Project object */;
+}

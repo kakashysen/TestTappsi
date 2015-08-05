@@ -1,5 +1,5 @@
 # TestTappsi
-Solucion de los ejercicios 1 - 3
+Solucion de los ejercicios 1 - 4
 
 1. Consumir con Objective C para IOs el json presente en https://raw.githubusercontent.com/tappsi/test_recruiting/master/sample_files/driver_info.json indicándonos dentro del repositorio el código que usaste - [Metodo de la linea 124]
 

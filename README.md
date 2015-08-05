@@ -7,4 +7,4 @@ Solucion de los ejercicios 1 - 3
 
 3. Encontrar el centroide de las posiciones incluído tu dispositivo. - [Lineas desde la 108 - 111]
 
-4. (Opcional) Proyectar en un mapa de Googlemaps que tenga el zoom de forma automática en los marcadores con las posiciones que tienes: los taxistas del json, el centroide y la posición actual del dispositivo.
+4. (Opcional) Proyectar en un mapa de Googlemaps que tenga el zoom de forma automática en los marcadores con las posiciones que tienes: los taxistas del json, el centroide y la posición actual del dispositivo. - [Lineas 34 - 40, 66 - 73, 124 - 130, 142 - 153]

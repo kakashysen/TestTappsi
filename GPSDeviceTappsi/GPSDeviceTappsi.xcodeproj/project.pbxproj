@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		987FE332FC92362A073C9D61 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC5C2CB18B66683A8C42ECB /* libPods.a */; };
+		E449D7BA1B718F10007C15DA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E449D7B91B718F10007C15DA /* Podfile */; };
 		E48582151B6EDAFB002F8E4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E48582141B6EDAFB002F8E4E /* main.m */; };
 		E48582181B6EDAFB002F8E4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E48582171B6EDAFB002F8E4E /* AppDelegate.m */; };
 		E485821B1B6EDAFB002F8E4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E485821A1B6EDAFB002F8E4E /* ViewController.m */; };
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FC5C2CB18B66683A8C42ECB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		607A8DC14F8D7C8F455AF34C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C1762AA7259F18423D62F959 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E449D7B91B718F10007C15DA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E485820F1B6EDAFB002F8E4E /* GPSDeviceTappsi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSDeviceTappsi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48582131B6EDAFB002F8E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E48582141B6EDAFB002F8E4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E48582391B6EDBBC002F8E4E /* CoreLocation.framework in Frameworks */,
+				987FE332FC92362A073C9D61 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,13 +70,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65B4030E498CB3ED77F8B8DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FC5C2CB18B66683A8C42ECB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBDA16219F97670DC1EDF850 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				607A8DC14F8D7C8F455AF34C /* Pods.debug.xcconfig */,
+				C1762AA7259F18423D62F959 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E48582061B6EDAFB002F8E4E = {
 			isa = PBXGroup;
 			children = (
+				E449D7B91B718F10007C15DA /* Podfile */,
 				E48582381B6EDBBC002F8E4E /* CoreLocation.framework */,
 				E48582111B6EDAFB002F8E4E /* GPSDeviceTappsi */,
 				E485822B1B6EDAFB002F8E4E /* GPSDeviceTappsiTests */,
 				E48582101B6EDAFB002F8E4E /* Products */,
+				CBDA16219F97670DC1EDF850 /* Pods */,
+				65B4030E498CB3ED77F8B8DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E48582321B6EDAFB002F8E4E /* Build configuration list for PBXNativeTarget "GPSDeviceTappsi" */;
 			buildPhases = (
+				94417E74FA95A4013F87B39C /* Check Pods Manifest.lock */,
 				E485820B1B6EDAFB002F8E4E /* Sources */,
 				E485820C1B6EDAFB002F8E4E /* Frameworks */,
 				E485820D1B6EDAFB002F8E4E /* Resources */,
+				BBC312526ABBEFC75F8D6769 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,6 +234,7 @@
 			files = (
 				E485821E1B6EDAFB002F8E4E /* Main.storyboard in Resources */,
 				E48582231B6EDAFB002F8E4E /* LaunchScreen.xib in Resources */,
+				E449D7BA1B718F10007C15DA /* Podfile in Resources */,
 				E48582201B6EDAFB002F8E4E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +247,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94417E74FA95A4013F87B39C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BBC312526ABBEFC75F8D6769 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E485820B1B6EDAFB002F8E4E /* Sources */ = {
@@ -349,6 +412,7 @@
 		};
 		E48582331B6EDAFB002F8E4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 607A8DC14F8D7C8F455AF34C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GPSDeviceTappsi/Info.plist;
@@ -359,6 +423,7 @@
 		};
 		E48582341B6EDAFB002F8E4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1762AA7259F18423D62F959 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GPSDeviceTappsi/Info.plist;
@@ -420,6 +485,7 @@
 				E48582341B6EDAFB002F8E4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E48582351B6EDAFB002F8E4E /* Build configuration list for PBXNativeTarget "GPSDeviceTappsiTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +494,7 @@
 				E48582371B6EDAFB002F8E4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

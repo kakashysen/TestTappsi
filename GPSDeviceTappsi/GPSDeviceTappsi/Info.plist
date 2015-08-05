@@ -18,14 +18,14 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Test Location</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Test</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationUsageDescription</key>
+	<string>Test Location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Test</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

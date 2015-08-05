@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+@import GoogleMaps;
+
 @interface ViewController ()
 
 @end
@@ -16,17 +18,31 @@
 {
     CLLocationDegrees _latitude;
     CLLocationDegrees _longitude;
-    NSMutableArray *points;
+    NSMutableArray *totalPoints;
     BOOL isLocationCalculate;
+    GMSMapView *_mapView;
+    CLLocationCoordinate2D _centroid;
+    GMSMutablePath *_path;
+
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    // Inicializando el mapView
+    GMSCameraPosition *camera = [GMSCameraPosition new] ;
+    _mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    _mapView.myLocationEnabled = YES;
+    self.view = _mapView;
+    
+    _path = [GMSMutablePath path];
+    
+    
     [self setupLocation];
     
-    points =[NSMutableArray array];
+    totalPoints =[NSMutableArray array];
     
     NSURL *urlJson = [NSURL URLWithString:@"https://raw.githubusercontent.com/tappsi/test_recruiting/master/sample_files/driver_info.json"];
     NSDictionary *jsonTaxiDrivers = [self retrieveDataFromURL:urlJson];
@@ -35,10 +51,6 @@
     
     NSDictionary *bookings = [jsonTaxiDrivers objectForKey:@"bookings"];
     
-    //CLLocationCoordinate2D points[3] = {0.f,0.f,0.0f};
-    
-    
-
     
     if (bookings != nil)
     {
@@ -47,11 +59,18 @@
         {
             NSNumber *lat = [booking objectForKey:@"lat"];
             NSNumber *lon = [booking objectForKey:@"lon"];
-            
-           // CLLocationCoordinate2D position = CLLocationCoordinate2DMake(lat.doubleValue, lon.doubleValue);
-            //points[i] = position;
+
             NSValue *point = [NSValue valueWithCGPoint:CGPointMake(lat.doubleValue, lon.doubleValue)];
-            [points addObject:point];
+            [totalPoints addObject:point];
+            
+            // Agregando marcadoes para cada posicion de los taxistas
+            GMSMarker *marker = [[GMSMarker alloc] init];
+            marker.position = CLLocationCoordinate2DMake(lat.doubleValue, lon.doubleValue);
+            marker.title = [booking objectForKey:@"booking_id"];
+            marker.snippet = [booking objectForKey:@"neigborhood"];
+            marker.map = _mapView;
+            
+            [_path addCoordinate:CLLocationCoordinate2DMake(lat.doubleValue, lon.doubleValue)];
             
             i++;
         }
@@ -102,13 +121,36 @@
         _latitude = manager.location.coordinate.latitude;
         _longitude = manager.location.coordinate.longitude;
         
+        GMSMarker *marker = [[GMSMarker alloc] init];
+        marker.position = CLLocationCoordinate2DMake(_latitude, _longitude);
+        marker.title = @"Device Location";
+        marker.snippet = @"Device Location";
+        marker.map = _mapView;
+        
+        [_path addCoordinate:CLLocationCoordinate2DMake(_latitude, _longitude)];
+        
         NSLog(@"Latitud: %f", manager.location.coordinate.latitude);
         NSLog(@"Longitud: %f", manager.location.coordinate.longitude);
         
         NSValue *point = [NSValue valueWithCGPoint:CGPointMake(_latitude, _longitude)];
-        [points addObject:point];
+        [totalPoints addObject:point];
         
-        [self centroidFromPoints:points];
+        [self centroidFromPoints:totalPoints];
+        
+        
+        // Creando un marcador para el centroide
+        GMSMarker *markerCentroid = [[GMSMarker alloc] init];
+        markerCentroid.position = CLLocationCoordinate2DMake(_centroid.latitude, _centroid.longitude);
+        markerCentroid.title = @"Centroid";
+        markerCentroid.snippet = @"Centrorid";
+        markerCentroid.map = _mapView;
+        
+        [_path addCoordinate:CLLocationCoordinate2DMake(_centroid.latitude, _centroid.longitude)];
+        
+        // Ajustando el zoom de la camara para que se visualicen todos los marcadores
+        GMSCoordinateBounds *bounds = [[GMSCoordinateBounds alloc] initWithPath:_path];
+        GMSCameraUpdate *update = [GMSCameraUpdate fitBounds:bounds];
+        [_mapView moveCamera:update];
         
         [_locationManager stopUpdatingLocation];
         
@@ -164,12 +206,12 @@
         longitudTotal += point.y;
     }
     
-    
     centroidLatitud = latitudTotal / points.count;
     centroidLongitud = longitudTotal / points.count;
     
-    NSLog(@"Centroide - latitud: %f , longitud: %f", centroidLatitud, centroidLongitud);
     NSArray *result = [NSArray arrayWithObjects:[NSNumber numberWithDouble:centroidLatitud], [NSNumber numberWithDouble:centroidLongitud], nil];
+    
+    _centroid = CLLocationCoordinate2DMake(centroidLatitud, centroidLongitud);
     
     return result;
 }
